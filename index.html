@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url(./flappy2.png);
+        }
+        section{
+            height: 100%;
+            width: 100%;
+        }
+        #bird{
+            height:50px;
+            margin-top: 130px;
+            animation: fly 16s linear infinite;
+           
+        }
+        @keyframes fly {
+            0%{
+                transform: translateY(-100px);
+                margin-left: -50px;
+
+            }
+            10%{
+                transform: translateY(-150px);
+                margin-left: 0px;
+
+            }
+            20%{
+                transform: translateY(100px);
+                margin-left: 100px;
+
+
+            }
+            30%{
+                transform: translateY(160px);
+                margin-left: 200px;
+
+
+            }
+            40%{
+                transform: translateY(175px);
+                margin-left: 380px;
+
+
+            }   
+            50%{
+                transform: translateY(370px);
+                margin-left: 600px;
+
+
+            }   
+            60%{
+                transform: translateY(320px);
+                margin-left: 980px;
+
+
+            }   
+            70%{
+                transform: translateY(160px);
+                margin-left: 1000px;
+
+
+            }   
+            80%{
+                transform: translateY(160px);
+                margin-left: 1200px;
+
+
+            }
+            90%{
+                transform: translateY(90px);
+                margin-left: 1300px;
+
+
+            }
+            100%{
+                transform: translateY(90px);
+                margin-left: 1400px;
+
+
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+    <section>
+       <img id="bird" src="./bird-removebg-preview.png" alt="" srcset="">
+    </section>
+</body>
+</html>

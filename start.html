@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-color: #111;
+        }
+        #start{
+           position:absolute;
+            margin-left: 330px;
+            margin-top: 100px;
+            height: 500px;
+            width: 700px;
+            border-radius: 30px;
+            border: 3px solid #3fefef;
+            filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+            animation: glow 1s linear infinite;
+        
+        }
+        @keyframes glow {
+            0%{
+                filter: drop-shadow(0 0 20px #3fefef) drop-shadow(0 0 60px #3fefef);
+            }
+            100%{
+                filter: drop-shadow(0 0 20px #3fefef);
+            }
+        }
+        #btn{
+            position: absolute;
+            margin-left: 385px;
+            height: 170px;
+            width: 270px;
+            margin-top: 400px;
+        }
+        #btn:hover{
+            border-radius: 50px;
+            height: 175px;
+            width: 275px;
+        }
+    </style>
+</head>
+<body>
+    <img id="start" src="./start.jpg" alt="" srcset="">
+    <a href="index.html"><img id="btn" src="./Button.png" alt="" srcset=""></a>
+</body>
+</html>
